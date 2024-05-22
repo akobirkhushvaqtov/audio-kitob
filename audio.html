@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Audio kitoblar</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div id="audio" class="audio"></div>
+    <script>
+        // ---------------------O'TGAN KUNLAR
+      const otgankunlar = localStorage.getItem("otgankunlar");
+      if (otgankunlar) {
+        document.getElementById("audio").innerHTML = otgankunlar;
+        localStorage.removeItem("otgankunlar");
+      }
+        // -------------------
+
+
+        //----------------------SARIQ DEVNI MINIB
+        const sariqdev = localStorage.getItem("sariqdev");
+      if (sariqdev) {
+        document.getElementById("audio").innerHTML = sariqdev;
+        localStorage.removeItem("sariqdev");
+      }
+        //-----------------------
+
+
+        //-----------------------BOBURNOMA
+
+        const boburnoma = localStorage.getItem("boburnoma");
+      if (boburnoma) {
+        document.getElementById("audio").innerHTML = boburnoma;
+        localStorage.removeItem("boburnoma");
+      }
+      //-----------------------
+
+       //-----------------------IKKI ESHIK ORASI
+
+       const ikkieshik = localStorage.getItem("ikkieshik");
+      if (ikkieshik) {
+        document.getElementById("audio").innerHTML = ikkieshik;
+        localStorage.removeItem("ikkieshik");
+      }
+      //-----------------------
+
+
+      //-----------------------YULDUZLI TUNLAR
+
+      const yulduzlitunlar = localStorage.getItem("yulduzlitunlar");
+      if (yulduzlitunlar) {
+        document.getElementById("audio").innerHTML = yulduzlitunlar;
+        localStorage.removeItem("yulduzlitunlar");
+      }
+      //-----------------------
+
+
+      //-----------------------SHAYTANAT
+
+      const shaytanat = localStorage.getItem("shaytanat");
+      if (shaytanat) {
+        document.getElementById("audio").innerHTML = shaytanat;
+        localStorage.removeItem("shaytanat");
+      }
+      //-----------------------
+    </script>
+  </body>
+</html>
